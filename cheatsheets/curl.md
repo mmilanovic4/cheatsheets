@@ -47,11 +47,11 @@ curl https://httpbin.org/post --data-binary @data.txt
 
 `curl https://httpbin.org/headers --header "X-My-Name-Is: Milos"`
 
-**Измена `User-Agent` заглавља**
+**Измена User-Agent заглавља**
 
 `curl https://httpbin.org/headers --user-agent "Agent Smith v2.0"`
 
-**Измена `Referer` заглавља**
+**Измена Referer заглавља**
 
 `curl https://httpbin.org/headers --referer "pornhub.com"`
 
