@@ -3,8 +3,24 @@
 **Мрежни сервис**
 
 ```
-sudo /etc/init.d/networking start|stop|restart|status
-sudo systemctl start|stop|restart|enable|disable|status networking.service
+sudo /etc/init.d/networking {start|stop|restart|status}
+sudo systemctl {start|stop|restart|enable|disable|status networking.service}
+```
+
+**arp - менаџмент ARP кеша**
+
+```
+# Листа свих записа
+arp
+...
+# Листа свих записа за одређену ИП адресу
+arp 192.168.0.1
+...
+# Додавање новог записа (привремено!)
+sudo arp -s 192.168.0.20 00:11:22:33:44:55 temp
+...
+# Уклањање записа
+sudo arp -d 192.168.0.20
 ```
 
 **ifconfig/route и ip-link/ip-address/ip-route: конфигурација мрежних адаптера**
