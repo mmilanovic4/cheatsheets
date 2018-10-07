@@ -18,6 +18,8 @@ sudo /etc/init.d/ssh status
 sudo /etc/init.d/ssh start
 ```
 
+### Прва конекција са сервером
+
 **Проверавање отиска за ECDSA јавни кључ сервера (на серверу)**
 
 ```
@@ -57,7 +59,7 @@ $ cat .ssh/known_hosts
 |1|HA8DQ/zp9goX/bJNelSsg7bGQxI=|rW3HB+fQZZ97qO42YZCWukw7BpI= ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBDnj3sewWx3XOY9wcnsAzAb3jXMVIXaPK19guv9mcyvzW9xdAcXgfSb9TxsJxr5rh5CeI/2wUTgKDKfZkkvhjo=
 ```
 
-## Аутентификација путем кључа
+### Аутентификација путем кључа
 
 **Генерисање пара кључева (на клијенту)**
 
@@ -93,7 +95,7 @@ drwxr-xr-x 30 mmilanovic mmilanovic 4,0K Oct  1 02:54 ..
 -rw-r--r--  1 mmilanovic mmilanovic  222 Oct  1 02:58 known_hosts
 ```
 
-**Слање кључа серверу (са клијента)**
+**Слање јавног кључа серверу (са клијента)**
 
 ```
 $ ssh-copy-id mmilanovic@192.168.0.20
@@ -108,21 +110,21 @@ Now try logging into the machine, with:   "ssh 'mmilanovic@192.168.0.20'"
 and check to make sure that only the key(s) you wanted were added.
 ```
 
-**Сада нам сервер више не тражи шифру приликом конекције**
+**Сада можемо да се аутентификујемо серверу без коришћења лозинке (асиметрична криптографија)**
 
 ```
 $ ssh mmilanovic@192.168.0.20
 Enter passphrase for key '/home/mmilanovic/.ssh/id_rsa':
 ```
 
-## Конфигурација сервера
+### Додатна конфигурација сервера
 
-**Конфигурациони фајл - пожељно бекаповати оригинални**
+**Пожељно је урадити бекап оригиналног фајла пре измена**
 
 ```
-$ cd /etc/ssh/
-$ sudo cp sshd_config sshd_config.bak
-$ sudo vim sshd_config
+cd /etc/ssh/
+sudo cp sshd_config sshd_config.bak
+sudo vim sshd_config
 ```
 
 **Често коришћене директиве**
@@ -151,8 +153,6 @@ $ sudo vim sshd_config
 
 Ова директива дефинише да ли сервер дозвољава аутентификацију лозинком. Сада кад смо доставили наш јавни кључ на сервер, можемо променити вредност са подразумеване `yes` на `no`.
 
----
-
 **Дозвола приступа новом порту и рестартовање сервиса**
 
 ```
@@ -166,7 +166,7 @@ sudo /etc/init.d/ssh restart
 
 `ssh mmilanovic@192.168.0.20 -p 2222`
 
-## Снимак SSH мрежног саобраћаја
+### Снимак SSH мрежног саобраћаја
 
 ![Wireshark снимак мрежног саобраћаја - SSH конекција](../assets/ssh_wireshark.png)
 
@@ -174,7 +174,7 @@ sudo /etc/init.d/ssh restart
 
 **FTP**
 
-- Пренос фајлова
+- Сервис за пренос фајлова
 - Проблеми:
 	- Корисничко име и лозинка путују у отвореном облику
 	- Наредбе путују у отвореном облику
