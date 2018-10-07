@@ -1,0 +1,114 @@
+# OpenSSL 101
+
+**Листа команди и доступних алгоритама**
+`openssl help`
+
+**Хеш-функције**
+
+```
+# Хеш-вредност фајла
+echo "Hello!" > f.txt
+openssl dgst -md5 f.txt
+...
+# Пајповање на echo/printf
+echo -n "Hello!" | openssl dgst -md5
+printf "Hello!" | openssl dgst -md5
+```
+
+**Base64**
+
+```
+# Кодовање
+openssl enc -base64 -e <<< "Hello!"
+...
+# Декодовање
+openssl enc -base64 -d <<< "SGVsbG8hCg=="
+...
+# Base64 вредност фајла
+openssl enc -base64 -e -in in.txt -out out.txt
+...
+# Декодовање Base64 из фајла
+openssl enc -base64 -d -in out.txt
+```
+
+**Генерисање псеудо-случајних секвенци**
+
+```
+# Генерисање секвенце, излаз: фајл
+openssl rand -out rand.bin 16
+...
+# Генерисање секвенце, излаз: hex
+openssl rand -hex 16
+```
+
+**Симетрична криптографија**
+
+```
+# Шифровање: DES-CBC
+echo "Hello!" > plain.txt
+IV="7305efe7ec2cd645" # 8
+openssl enc -des-cbc -k "12345678" -iv $IV -base64 -in plain.txt -out encrypted.txt -e
+...
+# Дешифровање: DES-CBC
+openssl enc -des-cbc -k "12345678" -iv $IV -base64 -in encrypted.txt -out decrypted.txt -d
+cat decrypted.txt
+...
+# Шифровање: AES-256-CBC
+IV="ac5ea79bd734a359848769466fa731ad" # 16
+openssl rand -hex 32 > key.hex # 32
+openssl enc -aes-256-cbc -kfile key.hex -iv $IV -base64 -in plain.txt -out encrypted.txt -e
+...
+# Дешифровање: AES-256-CBC
+openssl enc -aes-256-cbc -kfile key.hex -iv $IV -base64 -in encrypted.txt -out decrypted.txt -d
+cat decrypted.txt
+...
+# Верификација:
+md5sum plain.txt
+md5sum decrypted.txt
+...
+# Генерисање кључа и ИВ (корисно да проверимо дужину кључа и ИВ за одређени алгоритам)
+openssl enc -aes-256-cbc -P
+```
+
+**Асиметрична криптографија**
+
+```
+# Генерисање RSA пара кључева
+openssl genpkey -algorithm RSA -outform PEM -out private.pem
+openssl rsa -in private.pem -inform PEM -pubout -outform PEM -out public.pem
+...
+# Алиса шифрује поруку Бобовим јавним кључем
+echo "Hello!" > plain.txt
+openssl pkeyutl -in plain.txt -keyform PEM -pubin -inkey Bob/public.pem -encrypt -out encrypted.bin
+...
+# Боб дешифрује поруку својим приватним кључем
+openssl pkeyutl -in encrypted.bin -keyform PEM -inkey Bob/private.pem -decrypt -out decrypted.txt
+...
+# Алиса потписује поруку својим приватним кључем (потпиши-па-шифруј)
+openssl pkeyutl -in plain.txt -keyform PEM -inkey Alice/private.pem -sign -out ds.bin
+...
+# Боб верификује потпис Алисиним јавним кључем (потпиши-па-шифруј)
+openssl pkeyutl -in plain.txt -keyform PEM -pubin -inkey Alice/public.pem -sigfile ds.bin -verify
+```
+
+**Додатак: SSL/TLS клијент**
+
+```
+openssl s_client -connect reddit.com:443
+# Након успешне конекције можемо слати ручно HTTP захтеве:
+HEAD / HTTP/1.1
+
+# Затварање конекције пајповањем
+echo | openssl s_client -connect reddit.com:443
+...
+# Тестирање одређене верзије протокола
+openssl s_client -connect reddit.com:443 -tls1_1
+openssl s_client -connect reddit.com:443 -no_ssl3
+...
+# Тестирање да ли сервер подржава одређену шифру
+openssl ciphers
+openssl s_client -connect reddit.com:443 -cipher "ECDHE-ECDSA-AES256-GCM-SHA384"
+...
+# Приказ свих сертификата из ланца
+openssl s_client -connect reddit.com:443 -showcerts
+```
