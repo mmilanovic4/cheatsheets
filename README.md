@@ -5,6 +5,7 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 ## Contents
 
 - [cURL 101](cs/curl.md)
+- [Git 101 (ENG)](cs/git.md)
 - [Linux networking](cs/linux_networking.md)
 - [MySQL 101](cs/mysql/101.md)
 - [MySQL 102](cs/mysql/102.md)

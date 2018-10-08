@@ -16,7 +16,7 @@ git config user.name "John Doe"
 git config user.email "john.doe@example.com"
 ```
 
-**Setup & init**
+**Create repositories**
 
 ```
 # Create an empty Git repository
@@ -26,7 +26,7 @@ git init
 git clone https://github.com/twbs/bootstrap.git
 ```
 
-**Stage & snapshot**
+**Make changes**
 
 ```
 # Show the working tree status
@@ -38,7 +38,7 @@ git add dir/
 git add *.txt
 git add .
 ...
-# Reset current HEAD to the specified state
+# Unstage a file while retaining the changes in working directory
 git add f.txt
 git status
 git reset f.txt
@@ -56,7 +56,7 @@ rm f.txt
 git checkout f.txt
 ```
 
-**Tracking path changes**
+**Refactor filenames**
 
 ```
 # Remove files from the working tree and from the index
@@ -79,7 +79,7 @@ echo "*.log" >> .gitignore
 echo "docs/" >> .gitignore
 ```
 
-**Inspect & compare**
+**Review history**
 
 ```
 # Show commit logs
