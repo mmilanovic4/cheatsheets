@@ -23,7 +23,7 @@ git config user.email "john.doe@example.com"
 git init
 ...
 # Clone a repository into a new directory
-git clone https://github.com/twbs/bootstrap.git
+git clone https://github.com/mmilanovic4/Test.git
 ```
 
 **Make changes**
@@ -105,6 +105,47 @@ git diff $COMMIT f.txt
 ...
 # Show any object in Git in human-readable format
 git show $COMMIT
+```
+
+**Group changes**
+
+```
+# List all local branches in the current repository
+git branch
+git branch --list
+...
+# Creates a new branch
+git branch issue-15
+...
+# Switches to the specified branch and updates the working directory
+git checkout issue-15
+...
+# Renames the specified branch
+git branch -m issue-15 oauth-migration
+...
+# Combines the specified branch's history into the current branch
+git merge oauth-migration
+...
+# Deletes the specified branch
+git branch -d oauth-migration 
+```
+
+**Synchronize changes**
+
+```
+# Add a Git URL as an alias
+git remote add origin https://github.com/mmilanovic4/Test.git
+git remote --verbose
+...
+# Fetch down all the branches from the Git remote
+git fetch
+git checkout master
+...
+# Fetch and merge any commits from the tracking remote branch
+git pull
+...
+# Transmit local branch commits to the remote repository branch
+git push
 ```
 
 **Redo commits**
