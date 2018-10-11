@@ -34,3 +34,11 @@ confidential site:.gov
 **Search by file type**
 
 `php oop filetype:pdf`
+
+**Search page title**
+
+`intitle:singidunum`
+
+**Search URL**
+
+`inurl:login.php`

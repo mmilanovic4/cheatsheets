@@ -135,7 +135,10 @@ git branch -d oauth-migration
 ```
 # Add a Git URL as an alias
 git remote add origin https://github.com/mmilanovic4/Test.git
+...
+# Shows a list of existing remotes
 git remote --verbose
+git remote -v
 ...
 # Fetch down all the branches from the Git remote
 git fetch
