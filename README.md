@@ -12,6 +12,7 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 - [MySQL 101](cs/mysql/101.md)
 - [MySQL 102](cs/mysql/102.md)
 - [MySQL 103 - triggers, procedures and transactions](cs/mysql/103.md)
+- [MySQL 104 - JSON](cs/mysql/103.md)
 - [OpenSSL 101](cs/openssl/101.md)
 - [OpenSSL 102](cs/openssl/102.md)
 - [SSH 101](cs/ssh.md)
