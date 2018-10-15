@@ -215,7 +215,7 @@ sftp> put /home/mmilanovic/.vimrc .vimrc
 
 ## Рад са програмима са графичким интерфејсом
 
-**Укључујемо X11 прослеђивање приликом конекције и покретање графичког програма (нпр. `gedit` едитор)**
+**Укључујемо X11 прослеђивање приликом конекције и покрећемо неки графички програм (у овом случају `gedit` едитор)**
 
 ```
 $ ssh -X mmilanovic@192.168.0.20 -p 2222
@@ -233,9 +233,9 @@ Unable to init server: Could not connect: Connection refused
 (gedit:3306): Gtk-WARNING **: 02:49:11.085: cannot open display:
 ```
 
-## Корисни алати
+## Корисни програми
 
 - sshpass
-- PuTTY
-- ConnectBot
-- FileZilla (за SFTP)
+- [PuTTY](https://www.putty.org/)
+- [ConnectBot](https://github.com/connectbot/connectbot)
+- [FileZilla](https://filezilla-project.org/) (за SFTP)
