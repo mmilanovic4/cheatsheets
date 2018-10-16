@@ -4,7 +4,7 @@
 
 ```
 sudo /etc/init.d/cron {start|stop|restart|status}
-sudo systemctl {start|stop|restart|enable|disable|status cron.service}
+sudo systemctl {start|stop|restart|enable|disable|status} cron.service
 ```
 
 **Измена актуелне cron табеле**

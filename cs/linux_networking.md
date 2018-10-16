@@ -4,7 +4,7 @@
 
 ```
 sudo /etc/init.d/networking {start|stop|restart|status}
-sudo systemctl {start|stop|restart|enable|disable|status networking.service}
+sudo systemctl {start|stop|restart|enable|disable|status} networking.service
 ```
 
 **arp - менаџмент ARP кеша**
