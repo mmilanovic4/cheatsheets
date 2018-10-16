@@ -4,6 +4,7 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 
 ## Contents
 
+- [Computer science 101 - Binary numbers and bitwise operations](cs/compsci/binary_numbers.md)
 - [Cron 101](cs/crontab.md)
 - [cURL 101](cs/curl.md)
 - [Git 101 (ENG)](cs/git.md)
