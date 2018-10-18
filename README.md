@@ -4,6 +4,8 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 
 ## Contents
 
+**Computer science and programming**
+
 - [Computer science 101 - Binary numbers and bitwise operations](cs/compsci/binary_numbers.md)
 - [Computer science 101 - Operating systems](cs/compsci/operating_systems.md)
 - [Cron](cs/crontab.md)
@@ -20,6 +22,6 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 - [SSH](cs/ssh.md)
 - [*Web Scraping with Python*](cs/web_scraping_with_python.md)
 
-Misc:
+**Mixed**
 
 - [Unit prefixes](cs/misc/unit_prefixes.md)
