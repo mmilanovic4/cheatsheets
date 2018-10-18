@@ -19,3 +19,7 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 - [OpenSSL 102](cs/openssl/102.md)
 - [SSH](cs/ssh.md)
 - [*Web Scraping with Python*](cs/web_scraping_with_python.md)
+
+Misc:
+
+- [Unit prefixes](cs/misc/unit_prefixes.md)
