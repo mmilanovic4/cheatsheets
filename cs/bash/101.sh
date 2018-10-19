@@ -101,6 +101,13 @@ function hello() {
 }
 hello
 
+function sum() {
+	if [ $# -ge 2 ]; then
+		echo $(($1 + $2))
+	fi
+}
+sum 5 2
+
 # Специјални параметри
 printf "ПИД: %d\n" $$
 printf "Фајл: %s\n" $0
