@@ -6,6 +6,7 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 
 **Computer science and programming**
 
+- [Bash](cs/bash)
 - [Computer science 101 - Binary numbers and bitwise operations](cs/compsci/binary_numbers.md)
 - [Computer science 101 - Operating systems](cs/compsci/operating_systems.md)
 - [Cron](cs/crontab.md)
