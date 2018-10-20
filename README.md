@@ -6,6 +6,7 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 
 **Computer science and programming**
 
+- [AWK](cs/awk/)
 - [Bash](cs/bash/)
 - [Computer science 101](cs/compsci/)
 - [Cron](cs/crontab.md)
