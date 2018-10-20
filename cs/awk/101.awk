@@ -7,6 +7,11 @@ BEGIN {
 }
 
 {
+	# Прескочи заглавље
+	if (NR == 1) {
+		next;
+	}
+
 	printf("Процесирамо %d. ред у фајлу: %s\n", NR, FILENAME);
 	printf("Број редова у тренутном реду: %d\n", NF);
 
@@ -41,10 +46,12 @@ BEGIN {
 }
 
 END {
+	print("Филмови по годинама:");
 	for (year in counter_years) {
 		printf("%d: %d\n", year, counter_years[year]);
 	}
 
+	print("Филмови по глумцима:");
 	for (actor in counter_actors) {
 		printf("%s: %d\n", actor, counter_actors[actor]);
 	}
