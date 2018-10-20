@@ -18,6 +18,7 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 - [OpenSSL](cs/openssl/)
 - [Perl](cs/perl)
 - [SSH](cs/ssh.md)
+- [TCP/IP model](cs/tcp_ip.md)
 - [*Web Scraping with Python*](cs/web_scraping_with_python.md)
 
 **Mixed**
