@@ -1,5 +1,7 @@
 # Модели слојевите рачунарске комуникације
 
+![TCP/IP модел](../assets/tcp_ip.png)
+
 **OSI модел**
 
 - енгл. *Open Systems Interconnection model*
@@ -24,9 +26,7 @@
 
 \#   | Слој               | Протоколи
 :----|:-------------------|:---------------------------------------------------------------
-4    | Слој апликације    | HTTP, DNS, DHCP, SSH,<br>POP, IMAP, SMTP, IRC,<br>SSH, FTP, NTP
+4    | Слој апликације    | HTTP, DNS, DHCP, SSH, POP, IMAP, SMTP, IRC, SSH, FTP, NTP
 3    | Транспортни слој   | TCP, UDP<br>Портови
 2    | Мрежни слој        | Логичке (IP) адресе
 1    | Слој везе          | Физичке (MAC) адресе
-
-![TCP/IP модел](../assets/tcp_ip.png)
