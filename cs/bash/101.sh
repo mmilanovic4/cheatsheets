@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Bourne Again SHell 101
+# Bourne Again Shell 101
 
 # Кориснички улаз
 echo -n "First name: "
