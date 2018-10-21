@@ -1,4 +1,8 @@
-# Cheatsheets
+<p align="center">
+	<img src="assets/logo.png" alt="Cheatsheets">
+</p>
+
+# Overview
 
 Collection of cheatsheets I regularly use. Most of them are in Serbian language. 
 
