@@ -35,7 +35,7 @@ else
 fi
 
 # FOR петља
-for fruit in "Бресква" "Јабука" "Банана"
+for fruit in "Бресква" "Јабука" "Банана";
 do
 	echo "$fruit"
 done
@@ -48,7 +48,7 @@ echo ${fruits[2]}
 
 # WHILE петља
 number=0
-while [ $number -le 10 ]
+while [ $number -le 10 ];
 do
 	number=$(($number + 1))
 
