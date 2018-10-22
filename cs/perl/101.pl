@@ -30,6 +30,7 @@ printf("%d\n", 0xff); # Хексадецимални запис
 );
 
 printf("Најлепши град: %s\n", $cities[0]);
+@cities = sort(@cities);
 
 # FOR петља
 foreach $city (@cities) {
