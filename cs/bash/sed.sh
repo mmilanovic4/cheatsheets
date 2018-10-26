@@ -40,3 +40,25 @@ sed -n '1,5 d; p' data.txt
 echo
 printf "[NOT оператор] Обриши све линије сем треће\n"
 sed -n '3!d; p' data.txt
+
+# Додатак: корисне grep наредбе
+grep "colo" ~/.vimrc
+
+# Претрага неосетљива на величину слова
+grep "Colo" --ignore-case ~/.vimrc
+grep "Colo" -i ~/.vimrc
+
+# Рекурзивно греповање
+grep "colo nord" --recursive ~/.*rc
+grep "colo nord" -r ~/.*rc
+
+# Рекурзивно греповање, укључујући и симболичке линкове
+grep "colo nord" -R ~/.*rc
+
+# Број линије
+grep "colo" --line-number ~/.vimrc
+grep "colo" -n ~/.vimrc
+
+# Регуларни изрази
+grep "^colo\ [a-z]+$" --perl-regexp ~/.vimrc
+grep "^colo\ [a-z]+$" -P ~/.vimrc

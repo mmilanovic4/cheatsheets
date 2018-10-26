@@ -4,44 +4,34 @@
 use utf8;
 binmode(STDOUT, "encoding(UTF-8)");
 
-# LWP - The World-Wide Web library for Perl
-use LWP;
+# Регуларни изрази
 
-$ua = LWP::UserAgent->new();
-$ua->agent("Agent Smith v2.0");
+# MATCH
+sub verify_first_and_last_name {
+	$name = shift;
 
-# GET захтев
-$get = HTTP::Request->new(GET => "https://httpbin.org/get");
-
-$res = $ua->request($get);
-
-if ($res->is_success) {
-	print($res->content, "\n");
-} else {
-	print($res->status_line, "\n");
+	if ($name =~ m/^[A-Z][a-z]+\ [A-Z][a-z]+$/) {
+		return 1;
+	}
+	return 0;
 }
 
-undef($res);
+print(verify_first_and_last_name("john doe"), "\n");
+print(verify_first_and_last_name("John Doe"), "\n");
 
-# POST захтев
-$post = HTTP::Request->new(POST => "https://httpbin.org/post");
-$post->content_type("application/x-www-form-urlencoded");
-$post->content("fn=John&ln=Doe");
+# MATCH + EXTRACT
+$str = "My name is John Doe and her name is Jane Doe.";
+@names = $str =~ m/([A-Z][a-z]+\ [A-Z][a-z]+)/g;
 
-$res = $ua->request($post);
-
-if ($res->is_success) {
-	print($res->content, "\n");
-} else {
-	print($res->status_line, "\n");
+foreach $name (@names) {
+	printf("%s\n", $name);
 }
 
-undef($res);
+# SUBSTITUTE
+$str =~ s/(?:[A-Z][a-z]+\ [A-Z][a-z]+)/Lorem Ipsum/g;
+print($str, "\n");
 
-# Преузимање ресурса са Веба
-$link = "https://imgs.xkcd.com/comics/dear_diary.png";
-$status = $ua->mirror($link, "S.png");
-
-unless ($status->is_success) {
-	print($status->status_line, "\n");
-}
+# SUBSTITUTE - CHANGE ORDER
+$str = "Today it's MM-DD-YYYY.";
+$str =~ s/([A-Z]{2})\-([A-Z]{2})\-([A-Z]{4})/$2.$1.$3/;
+print($str, "\n");
