@@ -24,4 +24,3 @@ set statusline+=%f
 set noruler
 
 syntax on
-colo nord
