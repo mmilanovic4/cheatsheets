@@ -25,6 +25,7 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 - [Perl](cs/perl/)
 - [SSH](cs/ssh.md)
 - [TCP/IP model](cs/tcp_ip.md)
+- [Vim](cs/vim/README.md)
 - [*Web Scraping with Python*](cs/web_scraping_with_python.md)
 
 **Mixed**
