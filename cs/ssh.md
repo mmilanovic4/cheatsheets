@@ -215,7 +215,7 @@ sftp> put /home/mmilanovic/.vimrc .vimrc
 
 ## Рад са програмима са графичким интерфејсом
 
-**Укључујемо X11 прослеђивање приликом конекције и покрећемо неки графички програм (у овом случају `gedit` едитор)**
+**Укључујемо X11 прослеђивање приликом конекције и покрећемо неки графички програм (у овом случају *gedit* едитор)**
 
 ```
 $ ssh -X mmilanovic@192.168.0.20 -p 2222
@@ -232,6 +232,20 @@ Unable to init server: Could not connect: Connection refused
 
 (gedit:3306): Gtk-WARNING **: 02:49:11.085: cannot open display:
 ```
+
+## SOCKS прокси
+
+SSH сервер можемо користити и као прокси:
+
+```
+$ ssh -D 8123 mmilanovic@192.168.0.20 -p 2222
+```
+
+Употреба проксија:
+
+- SOCKS host: localhost
+- SOCKS port: 8123
+- SOCKS v5
 
 ## Корисни програми
 
