@@ -30,5 +30,5 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 
 **Mixed**
 
+- [Bookmarks](cs/misc/bookmarks.md)
 - [Unit prefixes](cs/misc/unit_prefixes.md)
-- [Web development tutorials](cs/misc/web_development_tuts.md)
