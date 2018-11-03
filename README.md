@@ -14,6 +14,7 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 - [Bash](cs/bash/)
 - [Computer science 101 - Binary numbers](cs/compsci/binary_numbers.md)
 - [Computer science 101 - Cryptology](cs/compsci/cryptology/)
+- [Computer science 101 - Database normalization](cs/compsci/database_normalization.md)
 - [Computer science 101 - Operating systems](cs/compsci/operating_systems/)
 - [Cron](cs/crontab.md)
 - [cURL](cs/curl.md)
