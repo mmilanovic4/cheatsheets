@@ -168,7 +168,7 @@ sudo /etc/init.d/ssh restart
 
 ### Снимак SSH мрежног саобраћаја
 
-![Wireshark снимак мрежног саобраћаја - SSH конекција](../assets/ssh_wireshark.png)
+![Wireshark снимак мрежног саобраћаја - SSH конекција](../../../assets/ssh_wireshark.png)
 
 ## SFTP - SSH File Transfer Protocol
 
