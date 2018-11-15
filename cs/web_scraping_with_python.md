@@ -114,4 +114,4 @@ cat srp_latn.txt
 
 ---
 
-**Извор:** Ryan Mitchell, Web Scraping with Python - O'Reilly Media, 2015.
+**Извор:** *Ryan Mitchell, Web Scraping with Python - O'Reilly Media, 2015.*
