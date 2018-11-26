@@ -31,4 +31,5 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 **Mixed**
 
 - [Bookmarks](cs/misc/bookmarks.md)
+- [Payment cards](cs/misc/payment_cards.md)
 - [Unit prefixes](cs/misc/unit_prefixes.md)
