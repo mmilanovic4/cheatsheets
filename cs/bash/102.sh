@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Bourne Again Shell 103
+# Bourne Again Shell 102
 
 # getopt парсовање аргумената
 A=0
