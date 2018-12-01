@@ -20,7 +20,6 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 - [Cron](cs/crontab.md)
 - [cURL](cs/curl.md)
 - [Git (ENG)](cs/git.md)
-- [Google Advanced Search (ENG)](cs/google_search.md)
 - [Linux networking](cs/linux_networking.md)
 - [MySQL](cs/mysql/)
 - [OpenSSL](cs/openssl/)
