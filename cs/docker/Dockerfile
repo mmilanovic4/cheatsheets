@@ -20,6 +20,6 @@ COPY index.php /var/www/app/
 
 COPY httpd_foreground.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/httpd_foreground.sh
-CMD ["httpd_foreground.sh"]
 
 EXPOSE 80
+CMD ["httpd_foreground.sh"]

@@ -28,3 +28,5 @@ docker run --publish 127.0.0.1:1234:80 hello:1.0
 docker image rm 93fd78260bd1
 docker container rm f108b1f96f09
 ```
+
+[**Dockerfile - пример**](Dockerfile)
