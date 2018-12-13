@@ -9,12 +9,9 @@
 **Web security**
 
 - [HTTPS Cheat Sheet](https://scotthelme.co.uk/https-cheat-sheet/)
+- [Watch Your Hack](https://watchyourhack.com/)
 
 **Webcomics**
 
 - [xkcd](https://xkcd.com/)
 - [The Oatmeal](https://theoatmeal.com/)
-
-**Other**
-
-- [Laws of UX](https://lawsofux.com/)
