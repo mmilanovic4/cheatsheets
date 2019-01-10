@@ -9,15 +9,21 @@ sudo systemctl {start|stop|restart|enable|disable|status} cron.service
 
 **Измена актуелне cron табеле**
 
-`crontab -e`
+```
+crontab -e
+```
 
 **Приказ актуелне cron табеле**
 
-`crontab -l`
+```
+crontab -l
+```
 
 **Уклањање актуелне cron табеле**
 
-`crontab -r`
+```
+crontab -r
+```
 
 **Примери**
 

@@ -1,4 +1,4 @@
-# Python - BeautifulSoup библиотека
+# Python - BeautifulSoup модул
 
 **Инстанцирање BeautifulSoup објекта**
 
@@ -11,9 +11,11 @@ r = requests.get('https://example.com')
 bs_obj = BeautifulSoup(r.text, 'lxml')
 ```
 
-**Приступ елементу преко DOM стабла**
+**Приступ елементу директно преко DOM стабла**
 
-`bs_obj.html.body.h1.text`
+```
+bs_obj.html.body.h1.text
+```
 
 **Листа свих линкова**
 
@@ -24,33 +26,47 @@ anchors[0].attrs['href']
 
 **Листа свих heading елемената (`h1`-`h6`)**
 
-`bs_obj.find_all({'h1', 'h2', 'h3', 'h4', 'h5', 'h6'})`
+```
+bs_obj.find_all({'h1', 'h2', 'h3', 'h4', 'h5', 'h6'})
+```
 
-**Листа свих `span` елемената код којих `class` атрибут има одређену вредност**
+**Листа свих `span` елемената код којих `class` атрибут има задату вредност**
 
-`bs_obj.find_all('span', { 'class' : 'red' })`
+```
+bs_obj.find_all('span', { 'class' : 'red' })
+```
 
-**Листа свих елемената код којих `class` атрибут има одређену вредност**
+**Листа свих елемената код којих `class` атрибут има задату вредност**
 
-`bs_obj.find_all(attrs = { 'class' : 'red' })`
+```
+bs_obj.find_all(attrs = { 'class' : 'red' })
+```
 
-**Претрага `td` елемената унутар `table` елемента са одређеним `id` атрибутом**
+**Претрага `td` елемената унутар `table` елемента са задатим `id` атрибутом**
 
-`bs_obj.find('table', { 'id' : 'data' }).find_all('td')`
+```
+bs_obj.find('table', { 'id' : 'data' }).find_all('td')
+```
 
-**Листа елемената који имају `ul` елемент са одређеним `id` атрибутом као родитељски у DOM стаблу**
+**Листа елемената којима је `ul` елемент са задатим `id` атрибутом родитељ у DOM стаблу**
 
-`bs_obj.find('ul', { 'id' : 'list' }).children`
+```
+bs_obj.find('ul', { 'id' : 'list' }).children
+```
 
-**Елемент који је родитељ у DOM стаблу `ul` елементу са одређеним `id` атрибутом**
+**Елемент који је родитељ у DOM стаблу `ul` елементу са задатим `id` атрибутом**
 
-`bs_obj.find('ul', { 'id' : 'list' }).parent`
+```
+bs_obj.find('ul', { 'id' : 'list' }).parent
+```
 
-**Број свих елемената који садрже одређени текст - скоро па бескорисно**
+**Број свих елемената који садрже задати текст - скоро па бескорисно**
 
-`bs_obj.find_all(text = 'Lorem ipsum.')`
+```
+bs_obj.find_all(text = 'Lorem ipsum.')
+```
 
-**Број свих елеманта чији текст одговара одређеном регуларном изразу - може бити корисно**
+**Број свих елеманта чији текст одговара задатом регуларном изразу - може бити корисно**
 
 ```
 import re
@@ -58,17 +74,23 @@ import re
 bs_obj.find_all(text = re.compile('Lorem ipsum.'))
 ```
 
-**Листа свих PNG слика које се налазе унутар `img` тага**
+**Листа свих PNG слика које се налазе унутар `img` ознаке**
 
-`bs_obj.find_all('img', attrs = { 'src' : re.compile('\.PNG$', re.IGNORECASE) })`
+```
+bs_obj.find_all('img', attrs = { 'src' : re.compile('\.PNG$', re.IGNORECASE) })
+```
 
 **Листа свих елемената који садрже више од три атрибута**
 
-`bs_obj.find_all(lambda tag : len(tag.attrs) > 3)`
+```
+bs_obj.find_all(lambda tag : len(tag.attrs) > 3)
+```
 
 **Листа свих елемената који садрже `src` атрибут**
 
-`bs_obj.find_all(lambda tag : 'src' in tag.attrs)`
+```
+bs_obj.find_all(lambda tag : 'src' in tag.attrs)
+```
 
 ## Додатак: Tesseract OCR
 
@@ -81,7 +103,9 @@ sudo apt install tesseract-ocr tesseract-ocr-srp tesseract-ocr-srp-latn
 
 **Листа доступних речника**
 
-`tesseract --list-langs`
+```
+tesseract --list-langs
+```
 
 **Припрема слике (OCR ради боље на сликама већих димензија) - користимо ImageMagick алат**
 
