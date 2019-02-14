@@ -23,6 +23,7 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 - [Linux networking](cs/linux_networking.md)
 - [MySQL](cs/mysql/)
 - [OpenSSL](cs/openssl/)
+- [SQLite](cs/sqlite/)
 - [*Web Scraping with Python*](cs/web_scraping_with_python.md)
 
 **Mixed**

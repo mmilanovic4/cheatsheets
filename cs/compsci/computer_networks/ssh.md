@@ -13,7 +13,7 @@
 ```
 sudo apt update
 sudo apt install openssh-server
-...
+
 sudo /etc/init.d/ssh status
 sudo /etc/init.d/ssh start
 ```
@@ -158,7 +158,7 @@ sudo vim sshd_config
 ```
 sudo ufw allow 2222/tcp
 sudo ufw show added
-...
+
 sudo /etc/init.d/ssh restart
 ```
 
@@ -208,9 +208,7 @@ sftp> exit
 **Слање фајла на сервер преко SFTP конекције**
 
 ```
-...
 sftp> put /home/mmilanovic/.vimrc .vimrc
-...
 ```
 
 ## Рад са програмима са графичким интерфејсом
@@ -220,7 +218,7 @@ sftp> put /home/mmilanovic/.vimrc .vimrc
 ```
 $ ssh -X mmilanovic@192.168.0.20 -p 2222
 Enter passphrase for key '/home/mmilanovic/.ssh/id_rsa':
-...
+
 gedit
 ```
 
