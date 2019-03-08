@@ -14,6 +14,7 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 - [Bash](cs/bash/)
 - [Computer science 101 - Computer networks](cs/compsci/computer_networks/)
 - [Computer science 101 - Cryptology](cs/compsci/cryptology/)
+- [Computer science 101 - Data structures and algorithms](cs/compsci/dsa.md)
 - [Computer science 101 - Operating systems](cs/compsci/operating_systems/)
 - [Computer science 101 - Web application development](cs/compsci/web_application_development.md)
 - [Cron](cs/crontab.md)

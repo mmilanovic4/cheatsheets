@@ -2,9 +2,10 @@
 
 **Web development**
 
+- [World Wide Web Consortium - W3C](https://www.w3.org/)
+- [W3Schools Online Web Tutorials](https://www.w3schools.com/)
 - [Interneting Is Hard](https://internetingishard.com/)
 - [PHP: The Right Way](https://phptherightway.com/)
-- [W3Schools Online Web Tutorials](https://www.w3schools.com/)
 
 **Web security**
 
