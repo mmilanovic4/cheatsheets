@@ -245,6 +245,38 @@ $ ssh -D 8123 mmilanovic@192.168.0.20 -p 2222
 - SOCKS port: 8123
 - SOCKS v5
 
+## Конфигурациони фајл
+
+Локација фајла: 
+
+```
+~/.ssh/config
+```
+
+Пример конфигурације:
+
+```
+# GitHub
+Host github.com
+	User git
+	IdentityFile ~/.ssh/id_github
+
+# Development server
+Host dev
+	User mmilanovic4
+	HostName 0.0.0.0
+	IdentityFile ~/.ssh/id_dev_server
+	PreferredAuthentications publickey,keyboard-interactive,password
+```
+
+Можемо тестирати конфигурацију:
+
+```
+ssh -T git@github.com
+
+ssh dev # Конектовани смо на развојни сервер...
+```
+
 ## Корисни програми
 
 - sshpass
