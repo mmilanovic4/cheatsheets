@@ -16,3 +16,8 @@
 
 - [xkcd](https://xkcd.com/)
 - [The Oatmeal](https://theoatmeal.com/)
+
+**Hall of fame**
+
+- [The Million Dollar Homepage](http://www.milliondollarhomepage.com/)
+- [LINGsCARS](https://www.lingscars.com/)
