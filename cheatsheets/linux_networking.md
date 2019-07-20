@@ -13,7 +13,7 @@ sudo systemctl {start|stop|restart|enable|disable|status} networking.service
 # Листа свих записа
 arp
 ...
-# Листа свих записа за одређену ИП адресу
+# Листа свих записа за одређену адресу ИП
 arp 192.168.0.1
 ...
 # Додавање новог записа (привремено!)
@@ -127,7 +127,7 @@ sudo ufw show added
 sudo ufw status numbered
 sudo ufw delete 3
 ...
-# Лимитирање по ИП адреси - заштита од brute-force напада
+# Лимитирање по адреси ИП - заштита од brute-force напада
 sudo ufw limit ssh
 ```
 
