@@ -115,21 +115,27 @@ git show $COMMIT
 # List all local branches in the current repository
 git branch
 git branch --list
+git branch --verbose
+git branch -vv
 
 # Creates a new branch
 git branch issue-15
+git branch --set-upstream-to=origin/master
+git branch -u origin/master
 
 # Switches to the specified branch and updates the working directory
 git checkout issue-15
 
 # Renames the specified branch
+git branch --move issue-15 oauth-migration
 git branch -m issue-15 oauth-migration
 
 # Combines the specified branch's history into the current branch
 git merge oauth-migration
 
 # Deletes the specified branch
-git branch -d oauth-migration 
+git branch --delete oauth-migration
+git branch -d oauth-migration
 ```
 
 **Synchronize changes**
