@@ -23,59 +23,38 @@ sudo arp -s 192.168.0.20 00:11:22:33:44:55 temp
 sudo arp -d 192.168.0.20
 ```
 
-**ifconfig/route и ip-link/ip-address/ip-route: конфигурација мрежних адаптера**
+**ifconfig/route: конфигурација мрежних адаптера**
 
 ```
 # Сви мрежни интерфејси
 ifconfig -a
-ip link show
 ...
 # Само укључени мрежни интерфејси
 ifconfig
-ip link show up
 ...
 # Само lo интерфејс
 ifconfig lo
-ip link show dev lo
 ...
 # Искључивање eth0 интерфејса
 sudo ifconfig eth0 down
-sudo ip link set dev eth0 down
 ...
 # Укључивање eth0 интерфејса
 sudo ifconfig eth0 up
-sudo ip link set dev eth0 up
 ...
-# Измена адресе Интернет протокола: ifconfig + route
+# Измена адресе Интернет протокола
 sudo ifconfig eth0 192.168.0.15 netmask 255.255.255.0 broadcast 192.168.0.255
 route add default gw 192.168.0.1 metric 1 dev eth0
 ifconfig eth0
 route
 ...
-# Измена адресе Интернет протокола: ip-address + ip-route
-sudo ip address delete 192.168.0.15/24 dev eth0
-sudo ip address add 192.168.0.17/24 broadcast 192.168.0.255 dev eth0
-sudo ip route add default via 192.168.0.1 metric 1 dev eth0
-ip link show dev eth0
-ip route show
-...
-# Измена физичке адресе: ifconfig
+# Измена физичке адресе
 sudo ifconfig eth0 down
 ifconfig eth0 hw ether 00:11:22:33:44:55
 sudo ifconfig eth0 up
 ...
-# Измена физичке адресе: ip-link
-sudo ip link set dev eth0 down
-sudo ip link set dev eth0 address 00:11:22:33:44:55
-sudo ip link set dev eth0 up
-...
-# Укључивање/искључивање PROMISC мода: ifconfig
+# Укључивање/искључивање PROMISC мода
 sudo ifconfig eth0 promisc
 sudo ifconfig eth0 -promisc
-...
-# Укључивање/искључивање PROMISC мода: ip-link
-sudo ip link set dev eth0 promisc on
-sudo ip link set dev eth0 promisc off
 ```
 
 **Алати за мрежну дијагностику: ping и traceroute**
