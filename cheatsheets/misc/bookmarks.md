@@ -9,6 +9,7 @@
 
 **Web security**
 
+- [Bruce Schneier](https://www.schneier.com/)
 - [HTTPS Cheat Sheet](https://scotthelme.co.uk/https-cheat-sheet/)
 - [Watch Your Hack](https://watchyourhack.com/)
 

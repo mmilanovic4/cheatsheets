@@ -1,7 +1,5 @@
 # Префикси мерних јединица
 
-![xkcd - kilobyte](https://imgs.xkcd.com/comics/kilobyte.png)
-
 ## Метрички (СИ) префикси
 
 - Стандардизовани од стране Међународног система јединица (франц. *Système international d'unitès, SI*)

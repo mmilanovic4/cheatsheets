@@ -32,6 +32,5 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 - [Bookmarks](cheatsheets/misc/bookmarks.md)
 - [Geolocation](cheatsheets/misc/geolocation.md)
 - [National identification number in Serbia](cheatsheets/misc/jmbg.md)
-- [Payment cards](cheatsheets/misc/payment_cards.md)
 - [Time](cheatsheets/misc/time.md)
 - [Unit prefixes](cheatsheets/misc/unit_prefixes.md)
