@@ -6,11 +6,12 @@
 - [W3Schools Online Web Tutorials](https://www.w3schools.com/)
 - [Interneting Is Hard](https://internetingishard.com/)
 - [PHP: The Right Way](https://phptherightway.com/)
+- [MDN Web Docs](https://developer.mozilla.org/)
+- [Web | Google Developers](https://developers.google.com/web)
 
 **Web security**
 
 - [Bruce Schneier](https://www.schneier.com/)
-- [HTTPS Cheat Sheet](https://scotthelme.co.uk/https-cheat-sheet/)
 - [Watch Your Hack](https://watchyourhack.com/)
 
 **Webcomics**
