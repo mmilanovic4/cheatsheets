@@ -5,6 +5,7 @@
 - [World Wide Web Consortium - W3C](https://www.w3.org/)
 - [W3Schools Online Web Tutorials](https://www.w3schools.com/)
 - [Interneting Is Hard](https://internetingishard.com/)
+- [Eloquent JavaScript](https://eloquentjavascript.net/)
 - [PHP: The Right Way](https://phptherightway.com/)
 - [MDN Web Docs](https://developer.mozilla.org/)
 - [Web | Google Developers](https://developers.google.com/web)
