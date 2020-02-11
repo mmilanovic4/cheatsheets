@@ -159,6 +159,22 @@ git pull
 git push
 ```
 
+**Tagging**
+
+```
+# Create lightweight tag
+git tag v1.0
+
+# Show the tag information
+git show v1.0
+
+# Listing your tags
+git tag
+
+# Pushing the tags to the remote
+git push --tags
+```
+
 **Redo commits**
 
 ```
