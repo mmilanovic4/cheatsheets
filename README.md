@@ -20,6 +20,7 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 - [Cron](cheatsheets/crontab.md)
 - [cURL](cheatsheets/curl.md)
 - [Docker](cheatsheets/docker/)
+- [*Eloquent JavaScript*](cheatsheets/ejs/)
 - [Git (ENG)](cheatsheets/git.md)
 - [Linux networking](cheatsheets/linux_networking.md)
 - [MySQL](cheatsheets/mysql/)
