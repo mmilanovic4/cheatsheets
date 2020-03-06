@@ -101,6 +101,10 @@ git log --date=relative --since "2 hours ago" # alt.: --after
 # Show commits older than a specific date
 git log --date=short --until "2018-09-31" # alt.: --before
 
+# List total commits by author
+git shortlog --summary --numbered --email
+git shortlog -sne
+
 # Show changes between commits
 COMMIT="29bd5e32186b2d56b7b35a09597bfed6636d66c9"
 git diff $COMMIT f.txt
