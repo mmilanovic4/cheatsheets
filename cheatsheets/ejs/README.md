@@ -7,4 +7,4 @@
 3. [Functions](103.md)
 4. [Data structures: objects and arrays](104.md)
 5. [Higher-order functions](105.md)
-6. [](106.md)
+6. [The secret life of objects](106.md)
