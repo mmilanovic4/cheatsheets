@@ -88,6 +88,8 @@ echo "docs/" >> .gitignore
 git log
 git log --max-count=5
 git log -n 5
+git log --stat
+git log --numstat
 
 # Listing the history of a file
 git log --follow f.txt
