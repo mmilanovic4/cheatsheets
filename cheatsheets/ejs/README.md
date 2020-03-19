@@ -12,3 +12,5 @@
 6. [The secret life of objects](106.md)
 7. [Bugs and errors](107.md)
 8. [Regular expressions](108.md)
+9. [Modules](109.md)
+10. [Asynchronous programming](110.md)
