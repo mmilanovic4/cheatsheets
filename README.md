@@ -33,6 +33,7 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 - [Bookmarks](cheatsheets/misc/bookmarks.md)
 - [Colors](cheatsheets/misc/colors.md)
 - [Geolocation](cheatsheets/misc/geolocation.md)
-- [National identification number in Serbia](cheatsheets/misc/jmbg.md)
 - [Time](cheatsheets/misc/time.md)
 - [Unit prefixes](cheatsheets/misc/unit_prefixes.md)
+- [National identification number in Serbia](cheatsheets/misc/jmbg.md)
+- [Decisionon the form, content and manner of using payment order forms for dinar payment transactions](cheatsheets/misc/nbs.md)
