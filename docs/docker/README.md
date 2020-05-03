@@ -29,4 +29,4 @@ docker image rm 93fd78260bd1
 docker container rm f108b1f96f09
 ```
 
-[**Dockerfile - пример**](Dockerfile)
+[***Dockerfile* - пример**](Dockerfile)

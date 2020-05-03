@@ -10,6 +10,7 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 
 **Computer science and programming**
 
+- [Computer science 101 - AI](docs/compsci/artificial_intelligence/)
 - [Computer science 101 - Computer networks](docs/compsci/computer_networks/)
 - [Computer science 101 - Cryptology](docs/compsci/cryptology/)
 - [Computer science 101 - Information theory and coding](docs/compsci/information_theory/)

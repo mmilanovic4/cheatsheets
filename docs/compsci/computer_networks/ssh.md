@@ -1,10 +1,10 @@
-# SSH - Secure Shell
+# *SSH - Secure Shell*
 
-**SSH протокол**
+***SSH* протокол**
 
 - Сервис за рад на удаљеном рачунару
 - Безбедна варијанта Телнет протокола
-- Конзолни интерфејс, пренос података (SFTP)...
+- Конзолни интерфејс, пренос података (*SFTP*)...
 - Клијент-сервер архитектура
 - Заштита се обезбеђује шифровањем података
 
@@ -20,7 +20,7 @@ sudo /etc/init.d/ssh start
 
 ### Прва конекција са сервером
 
-**Проверавање отиска за ECDSA јавни кључ сервера (на серверу)**
+**Проверавање отиска за *ECDSA* јавни кључ сервера (на серверу)**
 
 ```
 $ ssh-keygen -l -f /etc/ssh/ssh_host_ecdsa_key.pub
@@ -39,7 +39,7 @@ mmilanovic@192.168.0.20's password:
 Welcome to Ubuntu 18.04.1 LTS (GNU/Linux 4.15.0-34-generic x86_64)
 ```
 
-**Листање активних корисника (невезано за SSH)**
+**Листање активних корисника (невезано за *SSH*)**
 
 ```
 $ w
@@ -168,11 +168,11 @@ sudo /etc/init.d/ssh restart
 
 ### Снимак SSH мрежног саобраћаја
 
-![Wireshark снимак мрежног саобраћаја - SSH конекција](../../../assets/ssh_wireshark.png)
+![*Wireshark* снимак мрежног саобраћаја - SSH конекција](../../../assets/ssh_wireshark.png)
 
-## SFTP - SSH File Transfer Protocol
+## *SFTP* - *SSH File Transfer Protocol*
 
-**FTP**
+***FTP***
 
 - Сервис за пренос фајлова
 - Проблеми:
@@ -183,12 +183,12 @@ sudo /etc/init.d/ssh restart
 - Решење:
 	- Шифровање саобраћаја
 
-**Безбедни FTP**
+**Безбедни *FTP***
 
-- Коришћењем SSL/TLS протокола (FTPS)
-- Коришћењем SSH протокола (SFTP)
+- Коришћењем *SSL/TLS* протокола (*FTPS*)
+- Коришћењем *SSH* протокола (*SFTP*)
 
-**Успостављање SFTP конекције и преузимање удаљеног фајла**
+**Успостављање *SFTP* конекције и преузимање удаљеног фајла**
 
 ```
 $ sftp -P 2222 mmilanovic@192.168.0.20
@@ -205,7 +205,7 @@ Fetching /home/mmilanovic/f.txt to f.txt
 sftp> exit
 ```
 
-**Слање фајла на сервер преко SFTP конекције**
+**Слање фајла на сервер преко *SFTP* конекције**
 
 ```
 sftp> put /home/mmilanovic/.vimrc .vimrc
@@ -231,9 +231,9 @@ Unable to init server: Could not connect: Connection refused
 (gedit:3306): Gtk-WARNING **: 02:49:11.085: cannot open display:
 ```
 
-## SOCKS прокси
+## *SOCKS* прокси
 
-SSH сервер можемо користити и као прокси:
+*SSH* сервер можемо користити и као прокси:
 
 ```
 $ ssh -D 8123 mmilanovic@192.168.0.20 -p 2222
@@ -241,9 +241,9 @@ $ ssh -D 8123 mmilanovic@192.168.0.20 -p 2222
 
 Употреба проксија:
 
-- SOCKS host: localhost
-- SOCKS port: 8123
-- SOCKS v5
+- *SOCKS host: localhost*
+- *SOCKS port: 8123*
+- *SOCKS v5*
 
 ## Конфигурациони фајл
 
@@ -279,7 +279,7 @@ ssh dev # Конектовани смо на развојни сервер...
 
 ## Корисни програми
 
-- sshpass
-- [PuTTY](https://www.putty.org/)
-- [ConnectBot](https://github.com/connectbot/connectbot)
-- [FileZilla](https://filezilla-project.org/) (за SFTP)
+- *sshpass*
+- [*PuTTY*](https://www.putty.org/)
+- [*ConnectBot*](https://github.com/connectbot/connectbot)
+- [*FileZilla*](https://filezilla-project.org/) (за *SFTP*)

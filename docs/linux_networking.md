@@ -7,7 +7,7 @@ sudo /etc/init.d/networking {start|stop|restart|status}
 sudo systemctl {start|stop|restart|enable|disable|status} networking.service
 ```
 
-**arp - менаџмент ARP кеша**
+**arp - менаџмент *ARP* кеша**
 
 ```
 # Листа свих записа
@@ -23,7 +23,7 @@ sudo arp -s 192.168.0.20 00:11:22:33:44:55 temp
 sudo arp -d 192.168.0.20
 ```
 
-**ifconfig/route: конфигурација мрежних адаптера**
+***ifconfig/route*: конфигурација мрежних адаптера**
 
 ```
 # Сви мрежни интерфејси
@@ -57,7 +57,7 @@ sudo ifconfig eth0 promisc
 sudo ifconfig eth0 -promisc
 ```
 
-**Алати за мрежну дијагностику: ping и traceroute**
+**Алати за мрежну дијагностику: *ping* и *traceroute***
 
 ```
 # ping
@@ -67,7 +67,7 @@ ping google.com -c 4
 mtr google.com -c 4
 ```
 
-**DNS алати: host, dig, nslookup**
+***DNS* алати: *host*, *dig*, *nslookup***
 
 ```
 host -t A google.com 8.8.8.8
@@ -79,7 +79,7 @@ dig -t A google.com @8.8.8.8
 nslookup
 ```
 
-**UFW - фронт-енд за iptables**
+***UFW* - фронт-енд за *iptables***
 
 ```
 # Покретање UFW
@@ -110,7 +110,7 @@ sudo ufw delete 3
 sudo ufw limit ssh
 ```
 
-**Nmap - мрежно извиђање**
+***Nmap* - мрежно извиђање**
 
 ```
 # Хоризонтално скенирање
@@ -127,7 +127,7 @@ nmap 192.168.0.1 -p 22,23
 sudo nmap -O 192.168.0.1
 ```
 
-**netstat - мрежна статистика**
+***netstat* - мрежна статистика**
 
 ```
 # Активне TCP конекције
@@ -161,7 +161,7 @@ netstat -atnp
 netstat -an | grep :3306
 ```
 
-**Netcat алат**
+***Netcat* алат**
 
 ```
 # TCP сервер (једнократни)
@@ -201,7 +201,7 @@ User-Agent: Agent Smith v2.0
 nc -v 192.168.0.20 22
 ```
 
-**tcpdump - снимање мрежног саобраћаја**
+***tcpdump* - снимање мрежног саобраћаја**
 
 ```
 # Листа доступних интерфејса

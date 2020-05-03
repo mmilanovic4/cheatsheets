@@ -1,61 +1,61 @@
-# cURL 101
+# *cURL* 101
 
-**GET захтев**
+***GET* захтев**
 
 ```
 curl https://api.ipify.org
 ```
 
-**GET захтев са аргументима (први начин)**
+***GET* захтев са аргументима (први начин)**
 
 ```
 curl "https://httpbin.org/get?fn=Milos&ln=Milanovic"
 ```
 
-**GET захтев са аргументима (други начин)**
+***GET* захтев са аргументима (други начин)**
 
 ```
 curl https://httpbin.org/get --data "fn=Milos&ln=Milanovic" --get
 ```
 
-**POST захтев - `x-www-form-urlencoded`**
+***POST* захтев - `x-www-form-urlencoded`**
 
 ```
 curl https://httpbin.org/post --data "fn=Milos&ln=Milanovic"
 ```
 
-**POST захтев - `multipart/form-data`**
+***POST* захтев - `multipart/form-data`**
 
 ```
 curl https://httpbin.org/post --form "fn=Milos&ln=Milanovic"
 ```
 
-**POST захтев - шаљемо параметре из фајла**
+***POST* захтев - шаљемо параметре из фајла**
 
 ```
 echo "fn=Milos&ln=Milanovic" > data.txt
 curl https://httpbin.org/post --data-binary @data.txt
 ```
 
-**POST захтев - шаљемо фајл као параметар**
+***POST* захтев - шаљемо фајл као параметар**
 
 ```
 curl https://httpbin.org/post --form "profile_pic=@S.png"
 ```
 
-**HEAD захтев - само заглавља**
+***HEAD* захтев - само заглавља**
 
 ```
 curl https://httpbin.org --head
 ```
 
-**PUT захтев**
+***PUT* захтев**
 
 ```
 curl https://httpbin.org/put --request PUT --data "fn=Milos&ln=Milanovic"
 ```
 
-**DELETE захтев**
+***DELETE* захтев**
 
 ```
 curl https://httpbin.org/delete --request DELETE --data "id=1"
@@ -67,25 +67,25 @@ curl https://httpbin.org/delete --request DELETE --data "id=1"
 curl https://httpbin.org/headers --header "X-My-Name-Is: Milos"
 ```
 
-**Измена User-Agent заглавља**
+**Измена *User-Agent* заглавља**
 
 ```
 curl https://httpbin.org/headers --user-agent "Agent Smith v2.0"
 ```
 
-**Измена Referer заглавља**
+**Измена *Referer* заглавља**
 
 ```
 curl https://httpbin.org/headers --referer "pornhub.com"
 ```
 
-**HTTP Basic аутентификација**
+***HTTP Basic* аутентификација**
 
 ```
 curl https://httpbin.org/basic-auth/mmilanovic/admin --basic --user "mmilanovic:admin"
 ```
 
-**HTTP Digest аутентификација**
+***HTTP Digest* аутентификација**
 
 ```
 curl https://httpbin.org/digest-auth/auth-int/mmilanovic/admin --digest --user "mmilanovic:admin"
@@ -129,7 +129,7 @@ curl http://httpbin.org/headers --proxy 192.168.0.20:3128
 curl http://httpbin.org/headers --proxy 192.168.0.20:3128 --proxy-user "mmilanovic:admin"
 ```
 
-**Коришћење SOCKS прокси-сервера**
+**Коришћење *SOCKS* прокси-сервера**
 
 ```
 curl http://httpbin.org/headers --socks5 192.168.0.20:1080
