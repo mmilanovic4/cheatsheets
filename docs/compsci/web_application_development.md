@@ -257,17 +257,6 @@ foo://example.com:8042/over/there?name=ferret#nose
 - *Microsoft Edge*
 	- Развијен 2015. године
 
-***JS* - подршка у Веб-прегледачима**
-
-- *Google Chrome*
-	- *V8*
-- *Mozilla Firefox*
-	- *SpiderMonkey*
-	- *Rhino*
-- *Microsoft IE/Edge*
-	- *Chakra*
-- *KDE Konqueror*
-	- *KJS*
 **Веб-прегледачи - енџини за рендеровање и *JS***
 
 - *Google Chrome*
