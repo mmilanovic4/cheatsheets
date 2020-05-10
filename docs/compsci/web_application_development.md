@@ -201,18 +201,6 @@ h1 {
 	- енгл. *European Computer Manufacturers Association, Ecma International*
 - Постоје значајне библиотеке
 
-***JS* - подршка у Веб-прегледачима**
-
-- *Google Chrome*
-	- *V8*
-- *Mozilla Firefox*
-	- *SpiderMonkey*
-	- *Rhino*
-- *Microsoft IE/Edge*
-	- *Chakra*
-- *KDE Konqueror*
-	- *KSJ*
-
 **Униформни локатор ресурса на Вебу**
 
 - енгл. *Uniform Resource Locator, URL*
@@ -260,9 +248,38 @@ foo://example.com:8042/over/there?name=ferret#nose
 	- Са појавом нових прегледача популарност му опада
 - *Mozilla Firefox*
 	- Развијен 2002. године од стране Мозила фондације
+- *Apple Safari*
+	- Развијен 2003. године
 - *Google Chrome*
 	- Развијен 2008. године од стране Гугла
 	- Победник другог рата прегледача - *IE vs Firefox vs Chrome*
 	- Преузео примат на тржишту око 2012. године
+- *Microsoft Edge*
+	- Развијен 2015. године
+
+***JS* - подршка у Веб-прегледачима**
+
+- *Google Chrome*
+	- *V8*
+- *Mozilla Firefox*
+	- *SpiderMonkey*
+	- *Rhino*
+- *Microsoft IE/Edge*
+	- *Chakra*
+- *KDE Konqueror*
+	- *KJS*
+**Веб-прегледачи - енџини за рендеровање и *JS***
+
+- *Google Chrome*
+	- *Blink* и *V8*
+- *Mozilla Firefox*
+	- *Gecko* и *SpiderMonkey*
+- *Microsoft Edge*
+	- *EdgeHTML* и *Chakra*
+	- Преписан на *Blink* и *V8*
+- *Apple Safari*
+	- *WebKit* и *JavaScriptCore*
+- *KDE Konqueror*
+	- *KHTML* и *KJS*
 
 **Напомена:** већина материјала преузета са курса "Интернет технологије" на [Универзитету Сингидунум](https://singidunum.ac.rs).
