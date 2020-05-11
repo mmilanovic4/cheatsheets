@@ -4,6 +4,7 @@
 
 - [World Wide Web Consortium - W3C](https://www.w3.org/)
 - [W3Schools Online Web Tutorials](https://www.w3schools.com/)
+- [web.dev](https://web.dev/)
 - [Interneting Is Hard](https://internetingishard.com/)
 - [Eloquent JavaScript](https://eloquentjavascript.net/)
 - [Laws of UX](https://lawsofux.com/)
