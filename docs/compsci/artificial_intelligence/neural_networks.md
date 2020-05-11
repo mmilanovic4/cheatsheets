@@ -48,3 +48,5 @@
 	- Препознавање говора (енгл. *Speech recognition*)
 
 ![Рекурентне ВНН](../../../assets/recurrent_neural_network.png)
+
+[*Brain.js* - пример рекурентне ВНН](bjs/002.js)
