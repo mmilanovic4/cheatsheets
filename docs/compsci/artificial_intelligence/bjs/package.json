@@ -1,0 +1,9 @@
+{
+	"name": "bjs-demo",
+	"version": "1.0.0",
+	"description": "Brain.js examples",
+	"license": "UNLICENSED",
+	"dependencies": {
+		"brain.js": "^2.0.0-alpha.12"
+	}
+}
