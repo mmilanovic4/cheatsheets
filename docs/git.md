@@ -113,6 +113,12 @@ git diff $COMMIT f.txt
 
 # Show any object in Git in human-readable format
 git show $COMMIT
+
+# Generate a diffstat between two commits
+COMMIT1="92b5672a30e2869a831b6fefd86c572f1474f97b"
+COMMIT2="6598927438f9b2716e5e52401be2815c3acfa25c"
+git diff --stat $COMMIT1 $COMMIT2
+git diff --shortstat $COMMIT1 $COMMIT2
 ```
 
 **Group changes**
