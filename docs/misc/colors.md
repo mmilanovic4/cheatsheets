@@ -33,7 +33,7 @@
 	- `rgb(0, 128, 255)` = `#0080ff` 
 	- `rgb(255, 255, 255)` = `#ffffff`
 
-### *CMYK*
+## *CMYK*
 
 - енгл. *Cyan, magenta, yellow, key (black)*
 - Цијан, магента, жута и црна
