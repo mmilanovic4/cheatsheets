@@ -3,8 +3,8 @@
 - Page up/down
 
 ```
-- FN + UP
-- FN + DOWN
+FN + UP
+FN + DOWN
 ```
 
 - Open command palette 
@@ -110,15 +110,15 @@ CMD + SHIFT + K
 - Add block comment
 
 ```
-- CMD + /
+CMD + /
 
-- SHIFT + OPTION + A
+SHIFT + OPTION + A
 ```
 
 - Highlight code
 
 ```
-- SHIFT + any direction
+SHIFT + any direction
 ```
 
 - Select next match
@@ -130,6 +130,28 @@ CMD + D
 - Search/Search all files
 
 ```
-- CMD + F
-- CMD + SHIFT + F
+CMD + F
+CMD + SHIFT + F
+```
+
+- Insert cursor above/below
+
+```
+CMD + OPTION + UP
+CMD + OPTION + DOWN
+```
+
+- Select current line
+- Select all occurences of current selection
+
+```
+CMD + L
+
+CMD + SHIFT + L
+```
+
+- Expand selection
+
+```
+- SHIFT + CONTROL + CMD + any direction
 ```
