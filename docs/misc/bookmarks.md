@@ -22,3 +22,7 @@
 
 - [The Million Dollar Homepage](http://www.milliondollarhomepage.com/)
 - [LINGsCARS](https://www.lingscars.com/)
+
+**Useful**
+
+- [This Ain’t Disney: A practical guide to CSS transitions and animations](https://blog.prototypr.io/this-aint-disney-a-practical-guide-to-css-transitions-and-animations-a8b87e7c5531)
