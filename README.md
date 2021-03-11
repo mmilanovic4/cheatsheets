@@ -20,6 +20,7 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 - [cURL](docs/curl.md)
 - [Docker](docs/docker/)
 - [*Eloquent JavaScript* (ENG)](docs/ejs/)
+- [Game theory (ENG)](docs/gt/)
 - [Git (ENG)](docs/git.md)
 - [Linux networking](docs/linux_networking.md)
 - [MySQL](docs/mysql/)
