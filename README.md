@@ -36,3 +36,4 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 - [Nutrition](docs/misc/nutrition.md)
 - [Payment cards](docs/misc/payment_cards.md)
 - [Time](docs/misc/time.md)
+- [Unit prefixes](docs/misc/unit_prefixes.md)
