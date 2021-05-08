@@ -25,5 +25,7 @@
 
 **Useful**
 
+- [Overreacted — A blog by Dan Abramov](https://overreacted.io/)
 - [This Ain’t Disney: A practical guide to CSS transitions and animations](https://blog.prototypr.io/this-aint-disney-a-practical-guide-to-css-transitions-and-animations-a8b87e7c5531)
 - [CSS Grid full-bleed layout tutorial](https://www.joshwcomeau.com/css/full-bleed/)
+- [Using React with D3.js](https://wattenberger.com/blog/react-and-d3)
