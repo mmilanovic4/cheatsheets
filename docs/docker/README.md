@@ -1,32 +1,32 @@
-# Docker - корисне наредбе
+# Docker
 
-**Листинг свих слика/контејнера**
+**List all images/containers**
 
 ```
 docker image ls
 docker container ls -a
 ```
 
-**Слике**
+**Docker images**
 
 ```
-docker build -t hello:1.0 .
-docker build --tag hello:1.0 .
+docker image build -t hello:1.0 .
+docker image build --tag hello:1.0 .
 ```
 
-**Контејнери**
+**Docker containers**
 
 ```
-docker run hello:1.0
-docker run -p 127.0.0.1:1234:80 hello:1.0
-docker run --publish 127.0.0.1:1234:80 hello:1.0
+docker container run hello:1.0
+docker container run -p 127.0.0.1:1234:80 hello:1.0
+docker container run --publish 127.0.0.1:1234:80 hello:1.0
 ```
 
-**Чишћење**
+**Clean-up**
 
 ```
 docker image rm 93fd78260bd1
 docker container rm f108b1f96f09
 ```
 
-[***Dockerfile* - пример**](Dockerfile)
+[***Dockerfile* - example**](Dockerfile)

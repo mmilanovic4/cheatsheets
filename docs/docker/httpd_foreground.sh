@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Покретање Апач Веб-сервера у позадини
+# Run Apache web-server in the foreground
 
 source /etc/apache2/envvars
 exec apache2 -D FOREGROUND
