@@ -1,8 +1,10 @@
 # Docker
 
-**List all images/containers**
+**Status/List all images/containers**
 
 ```
+docker version
+
 docker image ls
 docker container ls -a
 ```
@@ -27,6 +29,15 @@ docker container run --publish 127.0.0.1:1234:80 hello:1.0
 ```
 docker image rm 93fd78260bd1
 docker container rm f108b1f96f09
+```
+
+**Run a command in a running container/Logs**
+
+```
+docker container run --interactive --tty ubuntu /bin/bash
+docker container run -it ubuntu /bin/bash
+
+docker logs 6178ada3cc94
 ```
 
 [***Dockerfile* - example**](Dockerfile)
