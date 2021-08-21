@@ -25,7 +25,6 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 - [Linux networking](docs/linux_networking.md)
 - [MySQL](docs/mysql/)
 - [OpenSSL](docs/openssl/)
-- [UI](docs/ui/)
 
 **Mixed**
 
