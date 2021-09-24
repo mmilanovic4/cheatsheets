@@ -28,6 +28,7 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 
 **Mixed**
 
+- [Biology](docs/misc/biology.md)
 - [Bookmarks](docs/misc/bookmarks.md)
 - [Colors](docs/misc/colors.md)
 - [English](docs/misc/english/)
