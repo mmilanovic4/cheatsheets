@@ -24,6 +24,7 @@ Collection of cheatsheets I regularly use. Most of them are in Serbian language.
 - [Git (ENG)](docs/git.md)
 - [Linux networking](docs/linux_networking.md)
 - [MySQL](docs/mysql/)
+- [Python venv](docs/python_venv.md)
 - [OpenSSL](docs/openssl/)
 
 **Mixed**
