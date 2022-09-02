@@ -50,6 +50,9 @@ git status
 git commit --all --message="First commit"
 git commit -am "First commit"
 
+# Empty commit
+git commit --allow-empty -m 'Trigger deploy'
+
 # Show changes between commit and working tree
 git diff
 
